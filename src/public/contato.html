@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Contato</title>
+
+<style>
+body { font-family: Arial; margin:0; background:#f4f4f4; }
+header { background:#333; color:white; padding:15px; text-align:center; }
+nav a { color:white; margin:0 10px; text-decoration:none; }
+.container { max-width:900px; margin:40px auto; background:white; padding:30px; border-radius:8px; }
+input, textarea { width:100%; padding:10px; margin-top:10px; }
+button { padding:10px 20px; margin-top:15px; background:#333; color:white; border:none; }
+</style>
+
+</head>
+<body>
+
+<header>
+<h2>Minha Empresa</h2>
+<nav>
+<a href="servicos.html">Serviços</a>
+<a href="contato.html">Contato</a>
+</nav>
+</header>
+
+<div class="container">
+<h1>Fale Conosco</h1>
+
+<form action="/enviar" method="POST">
+<label>Nome:</label>
+<input type="text" name="nome" required>
+
+<label>Email:</label>
+<input type="email" name="email" required>
+
+<label>Mensagem:</label>
+<textarea name="mensagem" rows="5"></textarea>
+
+<button type="submit">Enviar</button>
+</form>
+</div>
+
+</body>
+</html>
